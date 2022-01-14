@@ -39,13 +39,13 @@ const Bio = () => {
   return (
     <div className="bio">
       <div className="bio-description">
-      <p>Hey, I'm Tom. 
-      <br /><br />Sharing insights from a decade working as a creative producer and synthesising updates from the creative technology industry. I run Buried Signals, where we create visual essays and interactive documentaries for the web. 
-      <br /><br />Born at <a href="https://www.wren.co/profile/tomvaillant" target="_blank" rel="noreferrer">357 PPM</a>. <span id="bio-toggler" onClick={((e) => triggerBio(e.target))}>Read more &#128071;</span></p>   
+      <p>Hey, I'm Tom. I run Buried Signals, where we create visual essays and interactive documentaries for the web. 
+      <br />
+      <span id="bio-toggler" onClick={((e) => triggerBio(e.target))}>Read more &#128071;</span></p>   
       </div>
       <div className={bioClass}>
       <p>
-      Currently consulting as an exec creative producer at Immersive Garden, past gigs have found me leading teams on award-winning projects for Red Bull and North Kingdom. I’m a self-taught filmmaker, programmer and dog dad living in Zurich. On calm days I work on a non-profit called Wallrunners, write fiction or code the occasional experiment!
+      I’m a self-taught filmmaker, programmer and dog dad living in Zurich. In my spare time I run a non-profit called Wallrunners. Past gigs have found me leading teams on award-winning productions for Red Bull, Immersive Garden and North Kingdom. On rainy days I like to write stories about people in different worlds.
       <br /><br />
       I'm the sum of a few parts : an independent filmmaking background, multiple code bootcamps, a French-American upbringing and a childhood obsession for science-fiction.
       </p>

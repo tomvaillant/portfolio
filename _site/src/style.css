@@ -88,7 +88,7 @@ html {
 
 body {
   color: white;
-  background-color: #00111C;
+  background-color: #1C1E1F;
 }
 
 hr {
@@ -319,16 +319,6 @@ a:focus {
 .bio p {
   font-size: 22px;
   margin-bottom: var(--spacing-0);
-}
-
-.bio a {
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.bio a:hover {
-  color: #A0FFCC;
 }
 
 .bio-description span {
