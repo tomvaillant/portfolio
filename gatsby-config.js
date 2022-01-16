@@ -3,9 +3,9 @@ module.exports = {
     title: `Tom Vaillant`,
     author: {
       name: `Tom Vaillant`,
-      summary: `Film | Code | Write`,
+      summary: `Creative Producer / Visual Journalist`,
     },
-    description: `Film | Code | Write`,
+    description: `Creative Producer / Visual Journalist`,
     siteUrl: `https://tomvaillant.com/`,
     social: {
       twitter: `tomvaillant_`,
