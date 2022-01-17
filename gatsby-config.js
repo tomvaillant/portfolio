@@ -6,7 +6,7 @@ module.exports = {
       summary: `Creative Producer / Visual Journalist`,
     },
     description: `Creative Producer / Visual Journalist`,
-    img: `/src/images/meta.jpg`,
+    img: `https://raw.githubusercontent.com/tomvaillant/portfolio/612825fdae8193e3e3448eb3b6e4232a3ee5b1e8/src/images/meta.jpg`,
     siteUrl: `https://tomvaillant.com/`,
     social: {
       twitter: `tomvaillant_`,
