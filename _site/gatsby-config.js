@@ -3,10 +3,11 @@ module.exports = {
     title: `Tom Vaillant`,
     author: {
       name: `Tom Vaillant`,
-      summary: `Film | Code | Write`,
+      summary: `Creative Producer / Visual Journalist`,
     },
-    description: `Film | Code | Write`,
+    description: `Creative Producer / Visual Journalist`,
     siteUrl: `https://tomvaillant.com/`,
+    img: `${__dirname}/src/images/meta.jpg`,
     social: {
       twitter: `tomvaillant_`,
     },
@@ -68,6 +69,7 @@ module.exports = {
                 description
                 siteUrl
                 site_url: siteUrl
+                img
               }
             }
           }
