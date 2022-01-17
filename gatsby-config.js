@@ -6,7 +6,7 @@ module.exports = {
       summary: `Creative Producer / Visual Journalist`,
     },
     description: `Creative Producer / Visual Journalist`,
-    img: `${__dirname}/src/images/meta.jpg`,
+    img: `/src/images/meta.jpg`,
     siteUrl: `https://tomvaillant.com/`,
     social: {
       twitter: `tomvaillant_`,
