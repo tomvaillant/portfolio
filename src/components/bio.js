@@ -40,7 +40,7 @@ const Bio = () => {
     <div className="bio">
       <div className="bio-description">
       <p>Hey, I'm Tom. 
-      <br /><br />Sharing insights from a decade working as a creative producer and synthesising updates from the creative technology industry. I run Buried Signals, where we create visual essays and interactive documentaries for the web. 
+      <br /><br />Visualising thoughts and sharing insights from a decade working as a creative producer in digital and film. I run Buried Signals, where we create visual essays and interactive documentaries for the web. 
       <br /><br />Born at <a href="https://www.wren.co/profile/tomvaillant" target="_blank" rel="noreferrer">357 PPM</a>. <span id="bio-toggler" onClick={((e) => triggerBio(e.target))}>Read more &#128071;</span></p>   
       </div>
       <div className={bioClass}>
