@@ -7,7 +7,7 @@ module.exports = {
     },
     description: `Creative Producer / Visual Journalist`,
     siteUrl: `https://tomvaillant.com/`,
-    img: `https://raw.githubusercontent.com/tomvaillant/portfolio/612825fdae8193e3e3448eb3b6e4232a3ee5b1e8/src/images/meta.jpg`,
+    img: `https://raw.githubusercontent.com/tomvaillant/portfolio/612825fdae8193e3e3448eb3b6e4232a3ee5b1e8/src/images/meta.png`,
     social: {
       twitter: `tomvaillant_`,
     },
