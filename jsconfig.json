@@ -1,0 +1,14 @@
+// @js-ignore
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["./src/**/*", "./pages/**/*", ".contentlayer/generated"],
+  "exclude": ["node_modules"]
+}
