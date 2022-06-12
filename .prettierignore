@@ -1,7 +1,4 @@
-build/*
-dist/*
-public/*
-.next/*
-node_modules/*
+.cache
 package.json
-*.log
+package-lock.json
+public
