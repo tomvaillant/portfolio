@@ -1,16 +1,19 @@
 import { allPosts } from 'contentlayer/generated';
-import { useMDXComponent } from 'next-contentlayer/hooks';
 import pick from '@/helpers/pick';
 import Home from '../components/pages/home';
-
-const mdxComponents = {};
+import { motion } from 'framer-motion';
+import Header from '@/components/dom/header';
+import PageTransition from '@/components/dom/pageTransition';
+import Dom from '@/components/layout/dom';
 
 const Page = (props) => {
-  // const MDXContent = useMDXComponent(props.posts);
   return (
     <>
-      {/* <MDXContent components={mdxComponents} /> */}
-      <Home posts={ props.posts } />
+      <Dom>
+        <Header />
+        <Home posts={ props.posts } />
+        <PageTransition />
+      </Dom>
     </>
   )
 }

@@ -2,9 +2,23 @@ import { HeaderStyle } from '@/components/dom/header/index.style'
 import Link from 'next/link';
 import IconLogo from '@/components/dom/iconLogo';
 
+const fadeInUp = {
+  initial: {
+    y: 0,
+    opacity: 0,
+    scale: 1.05,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, delay: 1.3, ease: "easeOut" }
+  }
+};
+
 const Header = ({ ...props }) => {
   return (
-    <HeaderStyle>
+    <HeaderStyle initial="initial" animate="animate" variants={fadeInUp}>
       <Link href="/">
         <a>
           <IconLogo />

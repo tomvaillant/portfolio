@@ -1,3 +1,6 @@
+import Header from '@/components/dom/header';
+import PageTransition from '@/components/dom/pageTransition';
+import Dom from '@/components/layout/dom';
 import Post from '@/components/pages/post';
 import HeadMeta from '@/config';
 import { allPosts } from 'contentlayer/generated';
@@ -6,7 +9,11 @@ const Page = ({ post }) => {
   return (
     <>
       <HeadMeta title={ post.title } description={ post.description } slug={ post.slug } image={ post.image } />
-      <Post post={ post } />
+      <Dom>
+        <Header />
+        <Post post={ post } />
+        <PageTransition />
+      </Dom>
     </>
   );
 };

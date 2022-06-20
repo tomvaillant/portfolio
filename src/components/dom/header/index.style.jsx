@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { down } from 'styled-breakpoints'
+import { motion } from 'framer-motion'
 
-export const HeaderStyle = styled.div`
+export const HeaderStyle = styled(motion.div)`
   position: fixed;
   top: 37.5px;
   left: 0;

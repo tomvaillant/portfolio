@@ -5,7 +5,7 @@ import PaginationPosts from '@/components/dom/paginationPosts'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-const ListPosts = ({ posts = [], categories = [], maxPagination = 1, ...props }) => {
+const ListPosts = ({ posts = [], categories = [], maxPagination = 1, className, ...props }) => {
   const [listFilteredPosts, setListFilteredPosts] = useState(posts)
   const [listFilteredPostsByPage, setListFilteredPostsByPage] = useState(listFilteredPosts)
   const [listActiveFilters, setListActiveFilters] = useState([])
@@ -25,10 +25,10 @@ const ListPosts = ({ posts = [], categories = [], maxPagination = 1, ...props })
     setListFilteredPostsByPage(newListFilteredPostsByPage)
   }, [indexPage, listFilteredPosts])
   return (
-    <ListPostsStyle>
-      { categories && categories.length > 0 && 
+    <ListPostsStyle className={className}>
+      {/* { categories && categories.length > 0 &&  */}
         <FilterPosts filters={ categories } onChange={ (newListActiveFilters) => setListActiveFilters(newListActiveFilters) } />
-      }
+      {/* } */}
       <div className="list-posts">
         { listFilteredPostsByPage.map((post, index) => 
           <div key={ `post-card-${index}` } className="post-card">
@@ -37,11 +37,11 @@ const ListPosts = ({ posts = [], categories = [], maxPagination = 1, ...props })
                 <PostCard post={ post } />
               </a>
               :
-                <Link href={ `/posts/${post.slug}` }>
-                  <a>
-                    <PostCard post={ post } />
-                  </a>
-                </Link>
+              <Link href={ `/posts/${post.slug}` }>
+                <a>
+                  <PostCard post={ post } />
+                </a>
+              </Link>
             }
           </div>
         ) }

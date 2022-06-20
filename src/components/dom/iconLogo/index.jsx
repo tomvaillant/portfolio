@@ -1,6 +1,6 @@
 import { LogoStyle } from '@/components/dom/iconLogo/index.style'
 
-const IconLogo = ({ orientation = "right", ...props }) => {
+const IconLogo = ({ ...props }) => {
   return (
     <LogoStyle className="logo" width="64" height="33" viewBox="0 0 64 33" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="0.531494" y="2.22852" width="25.4333" height="4.13964" rx="0.432692" fill="white"/>

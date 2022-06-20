@@ -1,40 +1,37 @@
-import { Canvas } from '@react-three/fiber'
+import { CanvasStyle } from '@/components/layout/canvas.style'
 import useStore from '@/helpers/store'
+import useCanvas from '@/helpers/useCanvas'
 import { useEffect, useRef } from 'react'
-import { useFlowMap } from '@/helpers/flowmap/useFlowMap'
-import useBlend from '@/helpers/blend/useBlend'
 
-function Bg() {
-  const flowmap = useFlowMap()
-  useBlend(flowmap)
+function resizeCanvas(canvas) {
+  const { width, height } = canvas.getBoundingClientRect()
+  
+  if (canvas.width !== width || canvas.height !== height) {
+    const { devicePixelRatio:ratio=1 } = window
+    const context = canvas.getContext('2d')
+    canvas.width = width*ratio
+    canvas.height = height*ratio
+    context.scale(ratio, ratio)
+    return true
+  }
 
-  return null
+  return false
+}
+const _postdraw = () => {
+ index++
+ ctx.restore()
+}
+const _predraw = (context, canvas) => {
+  context.save()
+  resizeCanvas(canvas)
+  const { width, height } = context.canvas
+  context.clearRect(0, 0, width, height)
 }
 
-const LCanvas = ({ children }) => {
-  const dom = useStore((state) => state.dom)
-
-  return (
-    <Canvas
-      mode='concurrent'
-      style={{
-        position: "fixed",
-        top: "0px",
-        left: "0px",
-        width: "100vw",
-        height: "100vh",
-        overflow: "hidden",
-        pointerEvents: "none",
-      }}
-      shadows={false}
-      gl={{ alpha: true, antialias: false, stencil: false, depth: true }}
-      linear={false}
-      onCreated={(state) => state.events.connect(dom.current)}
-    >
-      <Bg />
-      {children}
-    </Canvas>
-  )
+const Canvas = (props) => {  
+  const { draw, predraw=_predraw, postdraw=_postdraw } = props
+  const canvasRef = useCanvas(draw, {predraw, postdraw})
+  return <CanvasStyle ref={canvasRef} />
 }
 
-export default LCanvas
+export default Canvas

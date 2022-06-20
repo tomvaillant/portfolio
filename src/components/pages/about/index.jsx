@@ -1,5 +1,6 @@
 import { AboutStyle } from '@/components/pages/about/index.style'
 import ListPosts from '@/components/dom/listPosts';
+import { animate, motion } from 'framer-motion';
 
 const datas = {
   name: "Tom Vaillant",
@@ -96,11 +97,35 @@ const datas = {
   ]
 }
 
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+    scale: 1.1,
+    skewY: 2.5
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    skewY: 0,
+    transition: { duration: 0.5, ease: "easeOut" }
+  }
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.185
+    }
+  }
+};
+
 const About = () => {
   return (
     <AboutStyle>
-      <div className="container1">
-        <div className="profil">
+      <motion.div className="container1" initial='initial' animate='animate' variants={stagger}>
+        <motion.div className="profil" variants={fadeInUp}>
           <div className="infos">
             <h1 className="h2">{ datas.name }</h1>
             <p className="p1">{ datas.job }</p>
@@ -111,14 +136,14 @@ const About = () => {
               datas.socials.map(social => <a key={ `social-${ social.title.toLowerCase() }` } className="p1" href={ social.url } target="_blank" rel="noreferrer">{ social.title }</a>)
             }
           </div>
-        </div>
-        <div className="description">
+        </motion.div>
+        <motion.div className="description" variants={fadeInUp}>
           {
             datas.description.map((desc, index) => <p key={ `desc-${ index }` } className="p1">{ desc }</p>)
           }
-        </div>
-        <hr className="separator" />
-        <div className="companies">
+        </motion.div>
+        <motion.hr className="separator" variants={fadeInUp} />
+        <motion.div className="companies" variants={fadeInUp}>
           <div className="company current">
             <h2 className="h2">{ datas.experienciesCompanies.currently.title }</h2>
             <ul>
@@ -139,9 +164,9 @@ const About = () => {
               }
             </ul>
           </div>
-        </div>       
-        <hr className="separator" />
-        <div className="projects">
+        </motion.div>       
+        <motion.hr className="separator" variants={fadeInUp} />
+        <motion.div className="projects" variants={fadeInUp}>
           <h2 className="h2">{ datas.experienciesProjects.title }</h2>
           <ul className='projects-companies'>
             {
@@ -170,8 +195,8 @@ const About = () => {
               )
             }
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </AboutStyle>
   )
 }
