@@ -20,7 +20,7 @@ export const HeaderStyle = styled(motion.div)`
   }
   ${down('sm')} {
     flex-direction: column;
-    gap: 13.5px;
+    gap: 23.5px;
   }
   .navigation {
     display: flex;

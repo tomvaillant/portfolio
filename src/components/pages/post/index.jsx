@@ -1,6 +1,8 @@
+import IconArrow from '@/components/dom/iconArrow';
 import { PostStyle } from '@/components/pages/post/index.style'
 import { motion } from 'framer-motion';
 import { useMDXComponent } from 'next-contentlayer/hooks';
+import Link from 'next/link';
 
 const mdxComponents = {};
 
@@ -25,6 +27,12 @@ const Post = ({ post }) => {
   return (
     <PostStyle>
       <motion.div className="container1" initial="initial" animate="animate" exit="exit" variants={fadeInUp}>
+        <Link href="/">
+          <a className='back a2'>
+            <IconArrow orientation='left' />
+            <span>Back</span>
+          </a>
+        </Link>
         <MDXContent components={mdxComponents} />
       </motion.div>
     </PostStyle>

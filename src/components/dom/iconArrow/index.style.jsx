@@ -23,4 +23,20 @@ export const ArrowStyle = styled.svg`
       stroke: var(--bd-color-main);
     }
   }
+  .line {
+    transform-origin: ${
+      (props) => {
+        switch (props.orientation) {
+          case "top":
+            return "bottom"
+          case "bottom":
+            return "top"
+          case "left":
+            return "right"
+          case "rigth": default:
+            return "left"
+        }
+      }
+    };
+  }
 `
