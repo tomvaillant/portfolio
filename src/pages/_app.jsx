@@ -17,7 +17,7 @@ const breakpoints = createTheme({
 });
 
 function App({ Component, pageProps = { title: 'index' } }) {
-  const [isPreload, setIsPreload] = useState(true)
+  const [isPreload, setIsPreload] = useState(false)
 
   const router = useRouter()
 
@@ -46,14 +46,14 @@ function App({ Component, pageProps = { title: 'index' } }) {
     }
   }, [router])
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsPreload(false)
-    }, 2500)
-    return () => {
-      clearTimeout(timeout)
-    }
-  }, [])
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsPreload(false)
+  //   }, 2500)
+  //   return () => {
+  //     clearTimeout(timeout)
+  //   }
+  // }, [])
 
   return (
     <>

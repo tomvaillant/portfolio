@@ -154,7 +154,7 @@ const Home = ({ posts, ...props }) => {
         <motion.p className="p1 secondary-appear" variants={fadeInUp}>{ datas.description }</motion.p>
         <motion.hr className="separator secondary-appear" variants={fadeInUp}/>
         <motion.div variants={fadeInUp}>
-          <ListPosts className=" secondary-appear" posts={ posts } categories={ datas.allCategories } maxPagination={ 2 } />
+          <ListPosts className=" secondary-appear" posts={ posts } categories={ datas.allCategories } maxPagination={ 6 } />
         </motion.div>
       </motion.div>
     </HomeStyle>

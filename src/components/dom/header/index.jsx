@@ -1,6 +1,8 @@
 import { HeaderStyle } from '@/components/dom/header/index.style'
 import Link from 'next/link';
 import IconLogo from '@/components/dom/iconLogo';
+import IconArrowRotate from '../iconArrowRotate';
+import IconQuestion from '../iconQuestion';
 
 const fadeInUp = {
   initial: {
@@ -26,11 +28,17 @@ const Header = ({ ...props }) => {
       </Link>
       <ul className="navigation">
         <li>
-          <a className='a2' href="https://www.buriedsignals.com/" target="_blank" rel="noreferrer">Buried Signals</a>
+          <a className='a2' href="https://www.buriedsignals.com/" target="_blank" rel="noreferrer">
+            Buried Signals
+            <IconArrowRotate />
+          </a>
         </li>
         <li>
           <Link href="/about">
-            <a className='a2'>About</a>
+            <a className='a2'>
+              About
+              <IconQuestion />
+            </a>
           </Link>
         </li>
         <li>

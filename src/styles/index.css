@@ -516,14 +516,14 @@ a {
 
 h1, .h1 {
   font-family: 'Gilroy';
-  font-weight: 900;
+  font-weight: 600;
   font-size: 73.3697px;
   line-height: 86px;
 }
 
 h2, .h2 {
   font-family: 'Gilroy';
-  font-weight: 900;
+  font-weight: 600;
   font-size: 23px;
   line-height: 135%;
 }
@@ -537,14 +537,15 @@ p, a, li, .p1, .a1 {
 
 .p2 {
   font-family: 'Gilroy';
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
   line-height: 135%;
+  opacity: 0.5;
 }
 
 .a2 {
   font-family: 'Gilroy';
-  font-weight: 900;
+  font-weight: 600;
   font-size: 18px;
   line-height: 21px;
 }

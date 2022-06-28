@@ -53,11 +53,6 @@ const HeadMeta = ({ title = titleDefault, description = descriptionDefault, slug
         href='/icons/apple-touch-icon.png'
       />
       <link rel='manifest' href='/manifest.json' />
-      <link
-        rel='mask-icon'
-        color='#000000'
-        href='/icons/safari-pinned-tab.svg'
-      />
       <link rel='apple-touch-startup-image' href='/startup.png' />
 
       {/* Meta Tags for HTML pages on Mobile */}

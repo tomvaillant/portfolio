@@ -102,4 +102,19 @@ export const AboutStyle = styled.div`
       }
     }
   }
+  .awards {
+    .h2 {
+      margin-bottom: 32.5px;
+    }
+    .awards-types {
+      .awards-type {
+        &:not(:last-child) {
+          margin-bottom: 13.5px;
+        }
+        .p1 {
+          margin-left: 13.5px;
+        }
+      }
+    }
+  }
 `

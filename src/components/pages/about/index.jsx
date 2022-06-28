@@ -81,6 +81,15 @@ const datas = {
       }
     ]
   },
+  awards: {
+    title: "Awwwards",
+    list: [
+      { number: "21", type: "Awwwards" },
+      { number: "12", type: "FWA" },
+      { number: "9", type: "Webby" },
+      { number: "2", type: "Médailes de judo" }
+    ]
+  },
   socials: [
     {
       title: "Linkedin",
@@ -191,6 +200,19 @@ const About = () => {
                     )
                   }
                   </ul>
+                </li>
+              )
+            }
+          </ul>
+        </motion.div>
+        <motion.hr className="separator" variants={fadeInUp} />
+        <motion.div className="awards" variants={fadeInUp}>
+          <h2 className="h2">{ datas.awards.title }</h2>
+          <ul className='awards-types'>
+            {
+              datas.awards.list.map((award, index) => 
+                <li key={ `award-${ award.type }` } className='awards-type'>
+                  <p><span className="p2">{ award.number }</span><span className="p1">{ award.type }</span></p>
                 </li>
               )
             }
