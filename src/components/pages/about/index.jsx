@@ -4,7 +4,7 @@ import { animate, motion } from 'framer-motion';
 
 const datas = {
   name: "Tom Vaillant",
-  job: "Senior Producer",
+  job: "Creative Producer | Filmmaker",
   location: "Based in Zurich",
   description: ["Currently consulting as an exec creative producer at Immersive Garden, past gigs have found me leading teams on award-winning projects for Red Bull and North Kingdom. I’m a self-taught filmmaker, programmer and dog dad living in Zurich. On calm days I work on my non-profit or code the occasional experiment!", "I'm the sum of a few parts : an independent filmmaking background, multiple code bootcamps, a French-American upbringing and a childhood obsession for science-fiction."],
   experienciesCompanies: {
@@ -13,11 +13,15 @@ const datas = {
       companies: [
         {
           name: "Immersive Garden",
-          url: "https://google.fr" 
+          url: "https://immersive-g.com" 
         },
         {
           name: "Buried Signals",
-          url: "https://google.fr" 
+          url: "https://buriedsignals.com" 
+        },
+        {
+          name: "Wallrunners",
+          url: "https://wallrunners.org" 
         }
       ]
     },
@@ -25,12 +29,16 @@ const datas = {
       title: "Previously",
       companies: [
         {
-          name: "Immersive Garden",
-          url: "https://google.fr" 
+          name: "North Kingdom",
+          url: "https://northkingdom.com" 
         },
         {
-          name: "Buried Signals",
-          url: "https://google.fr" 
+          name: "Red Bull",
+          url: "https://redbull.com" 
+        },
+        {
+          name: "Seedstars",
+          url: "https://seedstars.com" 
         }
       ]
     }
@@ -39,42 +47,65 @@ const datas = {
     title: "Relevant Projects",
     companies: [
       {
-        title: "With Immersive Garden",
         years: {
+          title: "With Immersive Garden",
           2022: [
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "Amazon Games - New World Map",
+              url: "https://www.awwwards.com/sites/new-world-map-1"
             },
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "Orano",
+              url: "https://www.awwwards.com/sites/orano"
             },
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
-            },
-            {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "Prior Holdings",
+              url: "https://www.awwwards.com/sites/prior-holdings"
             }
           ],
-          2021: [
+          title: "With North Kingdom",
+          2019: [
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "Riot - Waiting for Ryze",
+              url: "https://www.riotgames.com/en/work-with-us/offices/dublin/getting-creative-with-eus-publishing-team"
             },
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "ON - The Roger",
+              url: "https://theroger.com/en/products"
             },
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "IBM - Terminal",
+              url: "https://www.ibm.com/security/digital-assets/cybersecurity-ops/terminal/"
             },
             {
-              name: "Buried Signals",
-              url: "https://google.fr"
+              name: "Nespresso - XR Interactive Tables",
+              url: "https://www.northkingdom.com/case/nespresso-table"
+            },
+            {
+              name: "Riot X Arcane",
+              url: "https://www.riotgames.com/en/news/riotx-arcane-until-next-time"
+            }
+          ],
+          title: "With Red Bull",
+          2016: [
+            {
+              name: "Chromasound",
+              url: "https://hyphenate.tv/work/redbull-chromasound-vr/"
+            },
+            {
+              name: "Interactive Festival Lineup",
+              url: "https://www.awwwards.com/sites/festival-lineup"
+            },
+            {
+              name: "Chordsurfer",
+              url: "https://www.cssdesignawards.com/sites/chordsurfer/28873/"
+            }
+          ],
+          title: "Freelance",
+          2014: [
+            {
+              name: "Between Snow and Stars",
+              url: "https://vimeo.com/145770250"
             }
           ]
         }
@@ -84,24 +115,23 @@ const datas = {
   awards: {
     title: "Awwwards",
     list: [
-      { number: "21", type: "Awwwards" },
-      { number: "12", type: "FWA" },
-      { number: "9", type: "Webby" },
-      { number: "2", type: "Médailes de judo" }
+      { number: "13", type: "Awwwards" },
+      { number: "9", type: "FWA" },
+      { number: "5", type: "CSS" }
     ]
   },
   socials: [
     {
       title: "Linkedin",
-      url: "https://google.fr"
+      url: "https://www.linkedin.com/in/tomvaillant/"
     },
     {
       title: "Twitter",
-      url: "https://google.fr"
+      url: "https://twitter.com/tmvllnt"
     },
     {
       title: "Email",
-      url: "mailTo:https://google.fr"
+      url: "mailTo:tom.vaillant@icloud.com"
     }
   ]
 }

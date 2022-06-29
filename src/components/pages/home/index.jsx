@@ -3,8 +3,8 @@ import ListPosts from '@/components/dom/listPosts';
 import { motion } from 'framer-motion';
 
 const datas = {
-  title: "Hello, I am Tom.",
-  description: "Currently visualising thoughts and working as a creative producer in digital and film. I run Buried Signals, where we curate visual, investigative and immersive experiments in journalism.",
+  title: "Hey, I'm Tom.",
+  description: "A creative producer in digital and film, I lead production at Immersive Garden and run Buried Signals, where we curate visual journalism.",
   allCategories : ["articles", "experiments"]
 }
 
