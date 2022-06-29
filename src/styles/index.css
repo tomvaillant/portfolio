@@ -467,6 +467,10 @@ hr {
 /*
 ! Global
 */
+html, body {
+  overflow-x: hidden;
+}
+
 a {
   cursor: pointer;
 }

@@ -47,8 +47,8 @@ const datas = {
     title: "Relevant Projects",
     companies: [
       {
+        title: "With Immersive Garden",
         years: {
-          title: "With Immersive Garden",
           2022: [
             {
               name: "Amazon Games - New World Map",
@@ -62,8 +62,12 @@ const datas = {
               name: "Prior Holdings",
               url: "https://www.awwwards.com/sites/prior-holdings"
             }
-          ],
-          title: "With North Kingdom",
+          ]
+        }
+      },
+      {
+        title: "With North Kingdom",
+        years: {
           2019: [
             {
               name: "Riot - Waiting for Ryze",
@@ -86,7 +90,11 @@ const datas = {
               url: "https://www.riotgames.com/en/news/riotx-arcane-until-next-time"
             }
           ],
-          title: "With Red Bull",
+        },
+      }, 
+      {
+        title: "With Red Bull",
+        years: {
           2016: [
             {
               name: "Chromasound",
@@ -101,7 +109,11 @@ const datas = {
               url: "https://www.cssdesignawards.com/sites/chordsurfer/28873/"
             }
           ],
-          title: "Freelance",
+        },
+      },
+      {
+        title: "Freelance",
+        years: {
           2014: [
             {
               name: "Between Snow and Stars",
