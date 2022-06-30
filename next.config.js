@@ -70,7 +70,6 @@ const nextConfig = {
   //   // ssr and displayName are configured by default
   //   styledComponents: true,
   // },
-  distDir: 'build',
   webpackConfig
 }
 
