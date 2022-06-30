@@ -36,6 +36,7 @@ export const HeaderStyle = styled(motion.div)`
         padding-right: 14px;
       }
       &:first-child {
+        display: none;
         .a2 {
           &::before {
             content: '';

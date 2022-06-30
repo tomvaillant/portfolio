@@ -18,10 +18,6 @@ const Page = ({ post }) => {
   );
 };
 
-Page.r3f = () => (
-  <></>
-)
-
 export default Page;
 
 export async function getStaticPaths() {

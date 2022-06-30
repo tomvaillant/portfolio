@@ -1,7 +1,6 @@
 import { allPosts } from 'contentlayer/generated';
 import pick from '@/helpers/pick';
 import Home from '../components/pages/home';
-import { motion } from 'framer-motion';
 import Header from '@/components/dom/header';
 import PageTransition from '@/components/dom/pageTransition';
 import Dom from '@/components/layout/dom';
@@ -17,10 +16,6 @@ const Page = (props) => {
     </>
   )
 }
-
-Page.r3f = (props) => (
-  <></>
-)
 
 export default Page
 

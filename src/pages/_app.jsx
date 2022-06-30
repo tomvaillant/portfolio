@@ -2,12 +2,10 @@ import { useRouter } from 'next/router'
 import useStore from '@/helpers/store'
 import { useEffect, useState } from 'react'
 import HeadMeta from '@/config'
-import Dom from '@/components/layout/dom'
 import '@/styles/index.css'
-import Header from '@/components/dom/header'
 import { ThemeProvider } from "styled-components"
 import { createTheme } from "styled-breakpoints"
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Preloader from '@/components/pages/preloader'
 
 const breakpoints = createTheme({
