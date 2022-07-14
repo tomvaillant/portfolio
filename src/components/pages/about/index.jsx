@@ -4,12 +4,14 @@ import { animate, motion } from 'framer-motion';
 
 const datas = {
   name: "Tom Vaillant",
-  job: "Creative Producer | Filmmaker",
+  job: "Creative Producer",
   location: "Based in Zurich",
-  description: ["Currently consulting as an exec creative producer at Immersive Garden, past gigs have found me leading teams on award-winning projects for Red Bull and North Kingdom. I’m a self-taught filmmaker, programmer and dog dad living in Zurich. On calm days I work on my non-profit or code the occasional experiment!", "I'm the sum of a few parts : an independent filmmaking background, multiple code bootcamps, a French-American upbringing and a childhood obsession for science-fiction."],
+  description: ["A self-taught filmmaker and programmer with an affinity for user experience design and digital strategy. After years of trying to become a specialist I've fallen in love with being a dedicated generalist, carving out time to continue learning and improving as a project lead or visual storyteller.", 
+  "Currently leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom.",
+  "On days off I write, indulge a childhood sci-fi obsession, code the occasional experiment or head out to goof around in the mountains with my dog."],
   experienciesCompanies: {
     currently: {
-      title: "Currently",
+      title: "Currents",
       companies: [
         {
           name: "Immersive Garden",
@@ -26,7 +28,7 @@ const datas = {
       ]
     },
     previously: {
-      title: "Previously",
+      title: "Previous",
       companies: [
         {
           name: "North Kingdom",
@@ -57,10 +59,6 @@ const datas = {
             {
               name: "Orano",
               url: "https://www.awwwards.com/sites/orano"
-            },
-            {
-              name: "Prior Holdings",
-              url: "https://www.awwwards.com/sites/prior-holdings"
             }
           ]
         }
@@ -128,7 +126,7 @@ const datas = {
     title: "Awwwards",
     list: [
       { number: "13", type: "Awwwards" },
-      { number: "9", type: "FWA" },
+      { number: "10", type: "FWA" },
       { number: "5", type: "CSS" }
     ]
   },
