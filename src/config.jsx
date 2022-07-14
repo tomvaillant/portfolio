@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const titleDefault = 'Tom Vaillant - Portfolio'
+const titleDefault = 'Tom Vaillant'
 let url = 'https://www.tomvaillant.com/'
 const descriptionDefault = 'Creative Producer / Visual Journalist'
 const keywordsDefault = ''
