@@ -3,10 +3,21 @@ import { down } from 'styled-breakpoints'
 
 export const PostStyle = styled.div`
   padding-top: 163px;
-  margin-right: 70px;
   padding-bottom: 110px;
-  ${down('sm')} {
-    margin-right: 0;
+  .hero {
+    margin-bottom: 50px;
+  }
+  .container-post {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .container-post-content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 30px;
   }
   .back {
     display: inline-flex;
@@ -38,7 +49,7 @@ export const PostStyle = styled.div`
       }
     }
   }
-  h1, h2, h3, p, ol, ul, img, a {
+  h1, h2, h3, p, ol, ul, a {
     margin-bottom: 13.5px;
   }
   ol, ul {
@@ -47,5 +58,9 @@ export const PostStyle = styled.div`
   }
   a {
     text-decoration: underline;
+  }
+  .container-post-content img {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 `

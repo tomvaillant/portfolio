@@ -45,9 +45,10 @@ const stagger = {
 
 const Post = ({ post }) => {
   const MDXContent = useMDXComponent(post.body.code);
+  console.log(post.body.code)
   return (
     <PostStyle>
-      <motion.div className="container1" initial='initial' animate='animate' variants={stagger}>
+      <motion.div className="container-post" initial='initial' animate='animate' variants={stagger}>
         <motion.div initial="initial" animate="animate" exit="exit" variants={fadeInUp}>
           <Link href="/">
             <a className='back a2'>
@@ -56,7 +57,10 @@ const Post = ({ post }) => {
             </a>
           </Link>
         </motion.div>
-        <MDXContent components={mdxComponents} />
+        { post.image && <motion.img className='hero' src={ post.image } alt='Image alt' initial="initial" animate="animate" exit="exit" variants={fadeInUp} /> }
+        <div className="container-post-content">
+          <MDXContent components={mdxComponents} />
+        </div>
       </motion.div>
     </PostStyle>
   )

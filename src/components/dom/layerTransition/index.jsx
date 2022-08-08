@@ -41,7 +41,6 @@ const LayerTransition = ({ ...props }) => {
    * Effects 
    */
   useEffect(() => {
-    console.log(router.isFallback)
     router.events.on('routeChangeStart', aniStart)
     router.events.on('routeChangeComplete', aniEnd)
     router.events.on('routeChangeError', aniEnd)
