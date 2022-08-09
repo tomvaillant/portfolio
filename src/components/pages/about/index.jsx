@@ -6,9 +6,10 @@ const datas = {
   name: "Tom Vaillant",
   job: "Creative Producer",
   location: "Based in Zurich",
-  description: ["A self-taught filmmaker and programmer with an affinity for user experience design and digital strategy. After years of trying to become a specialist I've fallen in love with being a dedicated generalist, carving out time to continue learning and improving as a project lead or visual storyteller.", 
-  "Currently leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom.",
-  "On days off I write, indulge a childhood sci-fi obsession, code the occasional experiment or head out to goof around in the mountains with my dog."],
+  description: ["Creating or producing interactive and visual experiences for the past decade, relying on creative skills from a filmmaking background in combination with technical know-how from programming experiments.", 
+  "Sometimes applying that expertise for partners in need of content and digital strategy consulting, although more recently I've come to focus all of my attention on a long-standing obsession : visual narratives.", 
+  "After years of trying to become a specialist in a single field I've fallen in love with being a dedicated generalist, carving out time to continue learning and improving as visual storyteller.", 
+  "Currently leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. On days off I write, indulge a childhood fascination for sci-fi and fantasy, code the occasional experiment or goof around in the mountains with my dog."],
   experienciesCompanies: {
     currently: {
       title: "Currents",
@@ -46,7 +47,7 @@ const datas = {
     }
   },
   experienciesProjects: {
-    title: "Relevant Projects",
+    title: "Highlights",
     companies: [
       {
         title: "With Immersive Garden",
@@ -132,12 +133,12 @@ const datas = {
   },
   socials: [
     {
-      title: "Linkedin",
-      url: "https://www.linkedin.com/in/tomvaillant/"
-    },
-    {
       title: "Twitter",
       url: "https://twitter.com/tmvllnt"
+    },
+    {
+      title: "Linkedin",
+      url: "https://www.linkedin.com/in/tomvaillant/"
     },
     {
       title: "Email",
