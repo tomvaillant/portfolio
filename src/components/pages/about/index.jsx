@@ -134,7 +134,7 @@ const datas = {
   socials: [
     {
       title: "Twitter",
-      url: "https://twitter.com/tmvllnt"
+      url: "https://twitter.com/tomvllnt"
     },
     {
       title: "Linkedin",
