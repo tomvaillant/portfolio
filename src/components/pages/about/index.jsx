@@ -6,9 +6,9 @@ const datas = {
   name: "Tom Vaillant",
   job: "Creative Producer",
   location: "Based in Zurich",
-  description: ["Creating or producing interactive and visual experiences for the past decade, relying on creative skills from a filmmaking background in combination with technical know-how from programming experiments.", 
-  "Sometimes applying that expertise for partners in need of content and digital strategy consulting, although more recently I've come to focus all of my attention on a long-standing obsession : visual narratives.", 
-  "After years of trying to become a specialist in a single field I've fallen in love with being a dedicated generalist, carving out time to continue learning and improving as visual storyteller.", 
+  description: ["I've been creating or producing interactive and visual experiences for the past decade, relying on creative skills from a filmmaking background in combination with technical know-how from programming experiments.", 
+  "After years of trying to become a specialist I've fallen in love with being a generalist, carving out time to continue learning and improving as visual storyteller.", 
+  "More recently I've come to focus my attention on a long-standing obsession : visual narratives.", 
   "Currently leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. On days off I write, indulge a childhood fascination for sci-fi and fantasy, code the occasional experiment or goof around in the mountains with my dog."],
   experienciesCompanies: {
     currently: {
