@@ -65,6 +65,21 @@ const datas = {
         }
       },
       {
+        title: "With Buried Signals",
+        years: {
+          2022: [
+            {
+              name: "Lines of Control",
+              url: "https://linesofcontrol.com"
+            },
+            {
+              name: "The Yemen Tribute",
+              url: "https://yementribute.com"
+            }
+          ]
+        }
+      },
+      {
         title: "With North Kingdom",
         years: {
           2019: [
