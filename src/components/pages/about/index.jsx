@@ -58,7 +58,11 @@ const datas = {
               url: "https://www.awwwards.com/sites/new-world-map-1"
             },
             {
-              name: "Orano",
+              name: "Qatar Foundation - In Numbers",
+              url: ""
+            },
+            {
+              name: "Orano - Nuclear Education Experience",
               url: "https://www.awwwards.com/sites/orano"
             }
           ]
@@ -75,6 +79,10 @@ const datas = {
             {
               name: "The Yemen Tribute",
               url: "https://yementribute.com"
+            },
+            {
+              name: "GATHER - Initiative Film",
+              url: "https://www.youtube.com/watch?v=IPpgVmy3z-0"
             }
           ]
         }
@@ -129,6 +137,18 @@ const datas = {
         title: "Freelance",
         years: {
           2014: [
+            {
+              name: "Red Bull - Underground Beirut",
+              url: "https://www.redbull.com/int-en/watch-an-exclusive-short-film-about-club-culture-in-beirut-lebanon"
+            },
+            {
+              name: "Red Bull - Wallrunners of Gaza",
+              url: "https://www.youtube.com/watch?v=IhYN0Ayo0i0"
+            },
+            {
+              name: "UNDP - Sustainable Realities VR: Armenia",
+              url: "https://tarandfeather.tv/projects/un-sustainable-realities-armenia/"
+            },
             {
               name: "Between Snow and Stars",
               url: "https://vimeo.com/145770250"
