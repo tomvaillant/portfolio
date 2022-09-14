@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const datas = {
   title: "Hey, I'm Tom.",
-  description: "A creative producer building experiences, documentaries and visual narratives for the web. Currently leading production at Immersive Garden and Buried Signals.",
+  description: "A creative producer building experiences, documentaries and visual narratives for the web. Currently leading production at Immersive Garden and building Buried Signals.",
   allCategories : ["articles", "experiments", "stories"]
 }
 

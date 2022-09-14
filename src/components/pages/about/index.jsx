@@ -9,7 +9,7 @@ const datas = {
   description: ["I've been producing content and interactive experiences for the past decade, relying on creative skills from a filmmaking background with technical know-how from programming experiments.", 
   "After years of trying to become a specialist I've fallen in love with being a generalist, carving out time to continue learning and growing as a digital storyteller.", 
   "More recently I've come to focus my energy on a long-standing obsession: visual narratives.", 
-  "Currently leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. On days off I write, indulge a childhood fascination for sci-fi and fantasy, code the occasional experiment or goof around in the mountains with my dog."],
+  "Currently building Buried Signals and leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. I also run Wallrunners: non-profit sports academies in Kenya, Kashmir and Gaza. On days off I write, indulge a childhood fascination for sci-fi and fantasy, code the occasional experiment or goof around in the mountains with my dog."],
   experienciesCompanies: {
     currently: {
       title: "Currents",
