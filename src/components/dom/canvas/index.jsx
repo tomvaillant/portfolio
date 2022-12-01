@@ -1,4 +1,4 @@
-import { CanvasStyle } from '@/components/dom/Canvas/index.style'
+import { CanvasStyle } from '@/components/dom/canvas/index.style'
 import useStore from '@/helpers/store';
 import { useAnimationFrame } from 'framer-motion';
 import { useState } from 'react';
