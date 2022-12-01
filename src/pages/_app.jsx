@@ -62,7 +62,7 @@ function App({ Component, pageProps = { title: 'index' } }) {
           {isPreload ? <Preloader /> : <Component {...pageProps} key={router.route} />}
         </AnimatePresence>
       </ThemeProvider>
-          {!isPreload && <Canvas />}
+      {!isPreload && <Canvas />}
     </>
   )
 }
