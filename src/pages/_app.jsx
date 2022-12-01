@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components"
 import { createTheme } from "styled-breakpoints"
 import { AnimatePresence } from "framer-motion";
 import Preloader from '@/components/pages/preloader'
+import Canvas from '@/components/dom/canvas'
 
 const breakpoints = createTheme({
   sm: "440px",
@@ -61,6 +62,7 @@ function App({ Component, pageProps = { title: 'index' } }) {
           {isPreload ? <Preloader /> : <Component {...pageProps} key={router.route} />}
         </AnimatePresence>
       </ThemeProvider>
+          {!isPreload && <Canvas />}
     </>
   )
 }

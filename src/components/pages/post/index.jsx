@@ -45,7 +45,6 @@ const stagger = {
 
 const Post = ({ post }) => {
   const MDXContent = useMDXComponent(post.body.code);
-  console.log(post.body.code)
   return (
     <PostStyle>
       <motion.div className="container-post" initial='initial' animate='animate' variants={stagger}>
