@@ -4,9 +4,9 @@ export const PostCardStyle = styled.div`
   width: 100%;
   &:hover {
     .h2 {
-      &::before {
-        width: calc(100% + 18px);
-        transition: width 0.25s ease-out;
+      span {
+        background-size:100% 2px;
+        transition: background-size 0.25s ease-out;
       }
     }
     .more {
@@ -24,16 +24,12 @@ export const PostCardStyle = styled.div`
     max-width: 79.2%;
     margin-bottom: 13.5px;
     margin-right: 47px;
-    &::before {
-      content: '';
-      position: absolute;
-      left: -9px;
-      display: block;
-      width: 0;
-      height: 100%;
-      background: linear-gradient(89.32deg, #CBC8C6 0%, #E9E6E3 100%);
-      z-index: -1;
-      transition: width 0.2s ease-in;
+    span {
+      display: inline;
+      box-decoration-break:clone;
+      background:linear-gradient(#000,#000) left bottom no-repeat;
+      background-size:0% 2px;
+      transition: background-size 0.2s ease-in;
     }
   }
   .more {

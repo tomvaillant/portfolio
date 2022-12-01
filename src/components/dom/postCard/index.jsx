@@ -4,7 +4,7 @@ import IconArrow from '@/components/dom/iconArrow';
 const PostCard = ({ post, ...props }) => {
   return (
     <PostCardStyle>
-      <h2 className="h2">{ post.title }</h2>
+      <h2 className="h2"><span>{ post.title }</span></h2>
       <div className="more">
         <p className="p1">{ post.description }</p>
         <IconArrow />
