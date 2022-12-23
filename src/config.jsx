@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const titleDefault = 'Tom Vaillant'
 let url = 'https://www.tomvaillant.com/'
-const descriptionDefault = 'Creative Producer / Visual Journalist'
+const descriptionDefault = 'A creative producer building experiences, documentaries and visual narratives for the web.'
 const keywordsDefault = ''
 const imageDefault = './img/og.jpg'
 const author = 'Tom Vaillant'
