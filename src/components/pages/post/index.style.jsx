@@ -17,7 +17,7 @@ export const PostStyle = styled.div`
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 0px;
   }
   .back {
     display: inline-flex;
