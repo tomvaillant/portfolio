@@ -490,9 +490,9 @@ a {
   min-width: 100vw;
   height: auto;
   min-height: 100vh;
-  background-image: url('../../public/img/noise-light.png');
+  /* background-image: url('../../public/img/noise-light.png');
   background-repeat: repeat;
-  background-size: 512px 512px;
+  background-size: 512px 512px; */
   /* transition: background-image 0s linear 1s; */
 }
 .theme-light h1, .theme-light h2, .theme-light h3, .theme-light p, .theme-light a {
@@ -505,9 +505,9 @@ a {
   min-width: 100vw;
   height: auto;
   min-height: 100vh;
-  background-image: url('../../public/img/noise-dark.png');
+  /* background-image: url('../../public/img/noise-dark.png');
   background-repeat: repeat;
-  background-size: 512px 512px;
+  background-size: 512px 512px; */
   /* transition: background-image 0s linear 1s; */
 }
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark p, .theme-dark a {

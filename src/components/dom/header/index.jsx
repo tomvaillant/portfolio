@@ -27,9 +27,15 @@ const Header = ({ ...props }) => {
         </a>
       </Link>
       <ul className="navigation">
-        <li>
+        {/* <li>
           <a className='a2' href="https://www.buriedsignals.com/" target="_blank" rel="noreferrer">
             Buried Signals
+            <IconArrowRotate />
+          </a>
+        </li> */}
+        <li>
+          <a className='a2' href="https://www.getrevue.co/profile/tomvaillant" target="_blank" rel="noreferrer">
+            Newsletter
             <IconArrowRotate />
           </a>
         </li>
