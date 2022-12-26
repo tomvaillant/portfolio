@@ -16,7 +16,8 @@ const mdxComponents = {
   a: (props) => <motion.a {...props} initial="initial" animate="animate" exit="exit" variants={fadeInUp} />,
   ul: (props) => <motion.ul {...props} initial="initial" animate="animate" exit="exit" variants={fadeInUp} />,
   ol: (props) => <motion.ol {...props} initial="initial" animate="animate" exit="exit" variants={fadeInUp} />,
-  img: (props) => <motion.img {...props} initial="initial" animate="animate" exit="exit" variants={fadeInUp} />
+  img: (props) => <motion.img {...props} initial="initial" animate="animate" exit="exit" variants={fadeInUp} />,
+  iframe: (props) => <motion.iframe {...props} initial="initial" animate="animate" exit="exit" variants={fadeInUp} />
 };
 
 const fadeInUp = {
