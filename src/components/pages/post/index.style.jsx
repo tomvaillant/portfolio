@@ -59,6 +59,11 @@ export const PostStyle = styled.div`
   a {
     text-decoration: underline;
   }
+  iframe {
+    width: 100%;
+    height: 50vw;
+    max-height: 325px;
+  }
   .container-post-content img {
     margin-top: 25px;
     margin-bottom: 25px;
