@@ -34,7 +34,7 @@ const Header = ({ ...props }) => {
           </a>
         </li> */}
         <li>
-          <a className='a2' href="https://www.getrevue.co/profile/tomvaillant" target="_blank" rel="noreferrer">
+          <a className='a2' href="https://tomvaillant.substack.com/" target="_blank" rel="noreferrer">
             Newsletter
             <IconArrowRotate />
           </a>
