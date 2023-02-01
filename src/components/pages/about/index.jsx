@@ -8,25 +8,29 @@ const datas = {
   location: "Based in Zurich",
   description: ["I've been producing content and interactive experiences for the past decade, relying on creative skills from a filmmaking background with technical know-how from programming experiments.", 
   "After years of trying to become a specialist I've fallen in love with being a generalist, carving out time to continue learning and growing as a digital storyteller.", 
-  "More recently I've come to focus my energy on a long-standing obsession: visual narratives.", 
-  "Currently building Buried Signals and leading the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. I also run Wallrunners: non-profit sports academies in Kenya, Kashmir and Gaza.",
+  "More recently I've come to focus my energy on a long-standing obsession: information design and visual narratives.", 
+  "Currently building Buried Signals and Nuanced while supporting the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. I also run Wallrunners: non-profit sports academies in Kenya, Kashmir and Gaza.",
   "On days off I read or write sci-fi and fantasy or goof around in the mountains with my dog."],
   experienciesCompanies: {
     currently: {
       title: "Currents",
       companies: [
         {
-          name: "Immersive Garden",
-          url: "https://immersive-g.com" 
-        },
-        {
           name: "Buried Signals",
           url: "https://buriedsignals.com" 
         },
         {
-          name: "Wallrunners",
-          url: "https://wallrunners.org" 
-        }
+          name: "Nuanced",
+          url: "https://nuanced.studio" 
+        },
+        {
+          name: "Immersive Garden",
+          url: "https://immersive-g.com" 
+        },
+        {
+          name: "Parsons School of Design",
+          url: "https://www.newschool.edu/parsons/" 
+        },
       ]
     },
     previously: {
