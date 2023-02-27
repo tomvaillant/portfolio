@@ -15,10 +15,26 @@ transform.forEach((value, index) => {
 transform = [...transform, ...transform].sort()
 const transformReverse = [...transform].reverse()
 
+// const transition = {
+//   initial: {
+//     x: "-2%",
+//     y: "-50%",
+//   },
+//   exit: {
+//     x: transform,
+//     y: "-50%",
+//     transition: { duration: 1, times: times }
+//   }
+// };
 const transition = {
   initial: {
     x: "-2%",
     y: "-50%",
+  },
+  animate: {
+    x: transform,
+    y: "-50%",
+    transition: { duration: 1, times: times }
   },
   exit: {
     x: transform,
@@ -32,7 +48,7 @@ const PageTransition = () => {
   const ink = useStore((s) => s.ink)
 
   return (
-    <PageTransitionStyle initial="initial" animate="animate" exit="exit">
+    <PageTransitionStyle initial="initial" exit="exit">
       <motion.img className="background" src={`/img/ink-${ink}.png`} variants={transition}/>
     </PageTransitionStyle>
   )

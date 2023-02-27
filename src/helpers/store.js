@@ -5,7 +5,8 @@ const useStore = create(() => {
     router: null,
     dom: null,
     theme: 'light',
-    ink: 'light'
+    ink: 'light',
+    test: false,
   }
 })
 

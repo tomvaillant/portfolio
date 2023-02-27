@@ -52,7 +52,7 @@ const Canvas = ({ ...props }) => {
         setTexture(textureImage)
       // }
       const backgroundImage = new Image();
-      backgroundImage.src = `/img/noise-${ theme }.png`
+      backgroundImage.src = `/img/noise-${ theme }.jpg`
       // backgroundImage.onload = function() {
         setBackground(backgroundImage)
       // }

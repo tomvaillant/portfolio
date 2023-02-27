@@ -7,7 +7,7 @@ export const CanvasStyle = styled.canvas`
   width: 100vw;
   height: 100vh;
   z-index: 0; 
-  background-image: url('../../img/noise-light.png');
+  background-image: url('../../img/noise-light.jpg');
   background-repeat: repeat;
   background-size: 512px 512px;
 `

@@ -490,7 +490,7 @@ a {
   min-width: 100vw;
   height: auto;
   min-height: 100vh;
-  /* background-image: url('../../public/img/noise-light.png');
+  /* background-image: url('../../public/img/noise-light.jpg');
   background-repeat: repeat;
   background-size: 512px 512px; */
   /* transition: background-image 0s linear 1s; */
@@ -499,7 +499,7 @@ a {
   color: var(--color-main);
 }
 .theme-light.is-mobile {
-  background-image: url('../../public/img/noise-light.png');
+  background-image: url('../../public/img/noise-light.jpg');
   background-repeat: repeat;
   background-size: 512px 512px;
 }
@@ -510,7 +510,7 @@ a {
   min-width: 100vw;
   height: auto;
   min-height: 100vh;
-  /* background-image: url('../../public/img/noise-dark.png');
+  /* background-image: url('../../public/img/noise-dark.jpg');
   background-repeat: repeat;
   background-size: 512px 512px; */
   /* transition: background-image 0s linear 1s; */
@@ -519,9 +519,12 @@ a {
   color: var(--color-main);
 }
 .theme-dark.is-mobile {
-  background-image: url('../../public/img/noise-dark.png');
+  background-image: url('../../public/img/noise-dark.jpg');
   background-repeat: repeat;
   background-size: 512px 512px;
+}
+canvas {
+  background-color: var(--bg-color-main);
 }
 
 /*
@@ -619,4 +622,26 @@ p, a, li, .p1, .a1 {
   max-width: inherit;
   height: 100%;
   transform: translate3D(-2%, -50%, 0);
+}
+
+.background-test {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  opacity: 1;
+  /* transition: opacity 0s linear; */
+  pointer-events: none;
+}
+.background-test.is-hide {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.background-test.is-dark {
+  background-color: #000000;
+}
+.background-test.is-light {
+  background-color: #ffffff;
 }

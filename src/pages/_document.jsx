@@ -9,8 +9,8 @@ export default function Document() {
         <link rel="preload" as="image" href="./img/brush-light.png"></link>
         <link rel="preload" as="image" href="./img/ink-dark.png"></link>
         <link rel="preload" as="image" href="./img/ink-light.png"></link>
-        <link rel="preload" as="image" href="./img/noise-dark.png"></link>
-        <link rel="preload" as="image" href="./img/noise-light.png"></link>
+        <link rel="preload" as="image" href="./img/noise-dark.jpg"></link>
+        <link rel="preload" as="image" href="./img/noise-light.jpg"></link>
         {/* <script async src="./datas/hypothesis.json" className="js-hypothesis-config"></script> */}
         <script dangerouslySetInnerHTML={{ __html: `window.hypothesisConfig = function () { return { openSidebar: false, showHighlights: false, theme: "clean" } }` }} ></script>
         <script async src="https://hypothes.is/embed.js"></script>
