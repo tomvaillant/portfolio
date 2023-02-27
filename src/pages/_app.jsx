@@ -75,7 +75,7 @@ function App({ Component, pageProps = { title: 'index' } }) {
     if (isFirst) return 
     setTimeout(() => {
       setTest(true)
-    }, 999)
+    }, 899)
   }
   const aniEnd = () => {
     if (isFirst) return 
