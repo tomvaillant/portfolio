@@ -490,7 +490,6 @@ a {
   min-width: 100vw;
   height: auto;
   min-height: 100vh;
-  background-color: var(--bg-color-main);
   /* background-image: url('../../public/img/noise-light.jpg');
   background-repeat: repeat;
   background-size: 512px 512px; */
@@ -511,7 +510,6 @@ a {
   min-width: 100vw;
   height: auto;
   min-height: 100vh;
-  background-color: var(--bg-color-main);
   /* background-image: url('../../public/img/noise-dark.jpg');
   background-repeat: repeat;
   background-size: 512px 512px; */
