@@ -4,8 +4,8 @@ const useStore = create(() => {
   return {
     router: null,
     dom: null,
-    theme: 'dark',
-    ink: 'dark',
+    theme: 'light',
+    ink: 'light',
     test: false,
   }
 })

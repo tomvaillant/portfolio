@@ -20,7 +20,7 @@ const breakpoints = createTheme({
 
 function App({ Component, pageProps = { title: 'index' } }) {
   const [isPreload, setIsPreload] = useState(false)
-  const [isFirst, setIsFirst] = useState(true)
+  const [isFirst, setIsFirst] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [test, setTest] = useState(false)
 
