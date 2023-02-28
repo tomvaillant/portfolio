@@ -95,11 +95,11 @@ const Canvas = ({ ...props }) => {
       // }
     if (oldTheme !== theme) {
       if (theme == "light") {
-        // setTexture(refTextureLight.current)
-        setBackground(refBackgroundLight.current)
+        setTexture(refTextureLight.current)
+        // setBackground(refBackgroundLight.current)
       } else {
-        // setTexture(refTextureDark.current)
-        setBackground(refBackgroundDark.current)
+        setTexture(refTextureDark.current)
+        // setBackground(refBackgroundDark.current)
       }
       setOldTheme(theme)
     }
