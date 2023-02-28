@@ -25,15 +25,19 @@ const Canvas = ({ ...props }) => {
 
   // References
   const refCanvas = useRef(null)
+  const refTextureLight = useRef(null)
+  const refTextureDark = useRef(null)
+  const refBackgroundLight = useRef(null)
+  const refBackgroundDark = useRef(null)
   // States
   const [ctx, setCtx] = useState()
   const [width, setWidth] = useState()
   const [height, setHeight] = useState()
-  const [textureLight, setTextureLight] = useState()
-  const [textureDark, setTextureDark] = useState()
+  // const [textureLight, setTextureLight] = useState()
+  // const [textureDark, setTextureDark] = useState()
   const [texture, setTexture] = useState()
-  const [backgroundLight, setBackgroundLight] = useState()
-  const [backgroundDark, setBackgroundDark] = useState()
+  // const [backgroundLight, setBackgroundLight] = useState()
+  // const [backgroundDark, setBackgroundDark] = useState()
   const [background, setBackground] = useState()
   const [oldTheme, setOldTheme] = useState()
   // const [oldMousePos, setOldMousePos] = useState({ x: 0, y: 0 })
@@ -47,26 +51,26 @@ const Canvas = ({ ...props }) => {
     setCtx(ctx)
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
-    const initTextureLight = new Image()
-    initTextureLight.src = `/img/brush-light.png`
-    // initTextureLight.onload = function() {
-      setTextureLight(initTextureLight)
-    // }    
-    const initTextureDark = new Image()
-    initTextureDark.src = `/img/brush-dark.png`
-    // initTextureLight.onload = function() {
-      setTextureDark(initTextureDark)
-    // }
-    const initBackgroundLight = new Image()
-    initBackgroundLight.src = `/img/noise-light.jpg`
-    // initBackgroundLight.onload = function() {
-      setBackgroundLight(initBackgroundLight)
-    // }
-    const initBackgroundDark = new Image()
-    initBackgroundDark.src = `/img/noise-dark.jpg`
-    // initBackgroundLight.onload = function() {
-      setBackgroundDark(initBackgroundDark)
-    // }
+    // const initTextureLight = new Image()
+    // initTextureLight.src = `/img/brush-light.png`
+    // // initTextureLight.onload = function() {
+    //   setTextureLight(initTextureLight)
+    // // }    
+    // const initTextureDark = new Image()
+    // initTextureDark.src = `/img/brush-dark.png`
+    // // initTextureLight.onload = function() {
+    //   setTextureDark(initTextureDark)
+    // // }
+    // const initBackgroundLight = new Image()
+    // initBackgroundLight.src = `/img/noise-light.jpg`
+    // // initBackgroundLight.onload = function() {
+    //   setBackgroundLight(initBackgroundLight)
+    // // }
+    // const initBackgroundDark = new Image()
+    // initBackgroundDark.src = `/img/noise-dark.jpg`
+    // // initBackgroundLight.onload = function() {
+    //   setBackgroundDark(initBackgroundDark)
+    // // }
   }, [])
   useEffect(() => {
       // const textureImage = new Image();
@@ -79,20 +83,27 @@ const Canvas = ({ ...props }) => {
       // // backgroundImage.onload = function() {
       //   setBackground(backgroundImage)
       // // }
-      if (backgroundLight && backgroundDark && textureLight && textureDark) {
-        console.log(backgroundLight)
-        if (theme == "light") {
-          setTexture(textureLight)
-          setBackground(backgroundLight)
-        } else {
-          setTexture(textureDark)
-          setBackground(backgroundDark)
-        }
-      }
+      // if (backgroundLight && backgroundDark && textureLight && textureDark) {
+      //   console.log(backgroundLight)
+      //   if (theme == "light") {
+      //     setTexture(textureLight)
+      //     setBackground(backgroundLight)
+      //   } else {
+      //     setTexture(textureDark)
+      //     setBackground(backgroundDark)
+      //   }
+      // }
     if (oldTheme !== theme) {
+      if (theme == "light") {
+        setTexture(refTextureLight.current)
+        setBackground(refBackgroundLight.current)
+      } else {
+        setTexture(refTextureDark.current)
+        setBackground(refBackgroundDark.current)
+      }
       setOldTheme(theme)
     }
-  }, [theme, backgroundLight, backgroundDark, textureLight, textureDark])
+  }, [theme])
   useEffect(() => {
     if (ctx && texture) {
       // window.addEventListener('mousedown', handlerMouseDown, false)
@@ -258,7 +269,13 @@ const Canvas = ({ ...props }) => {
     // new Particle(context, x, y, w, h, r)
   };
   return (
-    <CanvasStyle ref={ refCanvas } />
+    <>
+      <CanvasStyle ref={ refCanvas } />
+      <img src="/img/brush-light.png" ref={ refTextureLight } style={{ display: "none" }} />
+      <img src="/img/brush-dark.png" ref={ refTextureDark } style={{ display: "none" }} />
+      <img src="/img/noise-light.jpg" ref={ refBackgroundLight } style={{ display: "none" }} />
+      <img src="/img/noise-dark.jpg" ref={ refBackgroundDark } style={{ display: "none" }} />
+    </>
   )
 }
 
