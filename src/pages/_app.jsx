@@ -36,6 +36,10 @@ function App({ Component, pageProps = { title: 'index' } }) {
   }, [])
 
   useEffect(() => {
+    console.log('isFirst', isFirst)
+  }, [isFirst])
+
+  useEffect(() => {
     useStore.setState({ router })
     const timeoutTheme = setTimeout(() => {
       switch (router.pathname.split('/')[1]) {
