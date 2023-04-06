@@ -1,5 +1,4 @@
 import { AboutStyle } from '@/components/pages/about/index.style'
-import ListPosts from '@/components/dom/listPosts';
 import { animate, motion } from 'framer-motion';
 
 const datas = {
@@ -74,7 +73,7 @@ const datas = {
         }
       },
       {
-        title: "With Buried Signals",
+        title: "With Nuanced",
         years: {
           2022: [
             {

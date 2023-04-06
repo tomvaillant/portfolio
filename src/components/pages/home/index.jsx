@@ -1,10 +1,11 @@
 import { HomeStyle } from '@/components/pages/home/index.style'
 import ListPosts from '@/components/dom/listPosts';
+import DescriptionWithLinks from '@/components/dom/DescriptionWithLinks';
 import { motion } from 'framer-motion';
 
 const datas = {
   title: "Hey, I'm Tom.",
-  description: "A creative producer building experiences, documentaries and visual narratives for the web. Currently building Buried Signals and Nuanced Studio.",
+  description: <DescriptionWithLinks />,
   allCategories : ["articles", "experiments", "stories"]
 }
 
