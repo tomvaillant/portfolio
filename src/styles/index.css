@@ -645,3 +645,11 @@ p, a, li, .p1, .a1 {
 .background-test.is-light {
   background-color: #ffffff;
 }
+.description-links {
+  text-decoration: underline;
+  font-weight: normal 0.3s ease-in-out;
+}
+.description-links:hover {
+  font-weight: bold;
+  text-decoration: none 0.3s ease-in-out;
+}
