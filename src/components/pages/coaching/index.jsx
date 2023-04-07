@@ -1,12 +1,11 @@
-import { CoachingStyle } from '@/components/pages/about/index.style'
-
+import { CoachingStyle } from '@/components/pages/coaching/index.style'
 
 const Coaching = () => {
   return (
     <CoachingStyle>
-    <p>testing</p>
+      <p>testing</p>
     </CoachingStyle>
   )
 }
 
-export default Coaching;
+export default Coaching
