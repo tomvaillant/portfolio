@@ -1,6 +1,6 @@
 import { HomeStyle } from '@/components/pages/home/index.style'
 import ListPosts from '@/components/dom/listPosts'
-import DescriptionWithLinks from '@/components/dom/DescriptionWithLinks'
+import DescriptionWithLinks from '@/components/dom/descriptionWithLinks'
 import { motion } from 'framer-motion'
 
 const datas = {
