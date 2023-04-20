@@ -26,7 +26,7 @@ const Coaching = () => {
           <h1>Producer Coaching</h1>
           <h2>Book a working session with me.</h2>
           <p>60 minutes — $200</p>
-          <p>We&apos;ll spend the time talking about your top goals and challenges, outlining a strategy and arranging an action plan for implementation in your production or your profesionnal growth.</p>
+          <p>We&apos;ll spend the time talking about your top goals and challenges, outlining a strategy and arranging an action plan for implementation in your production or your profesionnal growth. I also give ideas for tooling to help you simplify or improve creative processes.</p>
           <p>You&apos;ll also get a free copy of my course for creative producers once it is released in October.</p>
           <p>The recording and any resources we create or discuss are yours to keep.</p>
           <p>You can contact me by email <a href="mailto:tom@buriedsignals.com">here</a></p>
