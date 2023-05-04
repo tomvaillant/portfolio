@@ -56,7 +56,11 @@ const datas = {
       {
         title: "With Immersive Garden",
         years: {
-          2022: [
+          2023: [
+            {
+              name: "Aten7",
+              url: "https://www.aten7.com/"
+            },
             {
               name: "Amazon Games - New World Map",
               url: "https://www.awwwards.com/sites/new-world-map-1"
@@ -96,6 +100,10 @@ const datas = {
         years: {
           2019: [
             {
+              name: "Riot X Arcane",
+              url: "https://www.northkingdom.com/case/riotx-arcane"
+            },
+            {
               name: "Riot - Waiting for Ryze",
               url: "https://www.riotgames.com/en/work-with-us/offices/dublin/getting-creative-with-eus-publishing-team"
             },
@@ -110,10 +118,6 @@ const datas = {
             {
               name: "Nespresso - XR Interactive Tables",
               url: "https://www.northkingdom.com/case/nespresso-table"
-            },
-            {
-              name: "Riot X Arcane",
-              url: "https://www.riotgames.com/en/news/riotx-arcane-until-next-time"
             }
           ],
         },
