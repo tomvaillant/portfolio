@@ -122,9 +122,10 @@ export const HeaderStyle = styled(motion.div)`
           }
         }
       }
-      &:last-child {
+      &:nth-child(3) {
         .a2 {
-          &::before, &::after {
+          &::before,
+          &::after {
             content: '';
             position: absolute;
             right: 0;
@@ -150,6 +151,36 @@ export const HeaderStyle = styled(motion.div)`
               content: '';
               transform: translate3D(0, -25%, 0);
               transition: transform 0.15s ease-out;
+            }
+          }
+        }
+      }
+      &:last-child {
+        .a2 {
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: block;
+            width: 9px;
+            height: 9px;
+            border: 1px solid var(--bd-color-main);
+            border-radius: 100%;
+            transform: translate3D(0, -50%, 0);
+            transition: all 0.1s ease-in;
+          }
+          &:hover {
+            &::before {
+              transform: translate3D(2.5px, -50%, 0);
+              transition: all 0.15s ease-out;
+            }
+            &::after {
+              width: 16px;
+              height: 16px;
+              transform: translate3D(6px, -50%, 0);
+              transition: all 0.15s ease-out;
             }
           }
         }

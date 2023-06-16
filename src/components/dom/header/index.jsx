@@ -1,8 +1,8 @@
 import { HeaderStyle } from '@/components/dom/header/index.style'
-import Link from 'next/link';
-import IconLogo from '@/components/dom/iconLogo';
-import IconArrowRotate from '../iconArrowRotate';
-import IconQuestion from '../iconQuestion';
+import Link from 'next/link'
+import IconLogo from '@/components/dom/iconLogo'
+import IconArrowRotate from '../iconArrowRotate'
+import IconQuestion from '../iconQuestion'
 
 const fadeInUp = {
   initial: {
@@ -14,19 +14,19 @@ const fadeInUp = {
     y: 0,
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.5, delay: 1.3, ease: "easeOut" }
-  }
-};
+    transition: { duration: 0.5, delay: 1.3, ease: 'easeOut' },
+  },
+}
 
 const Header = ({ ...props }) => {
   return (
-    <HeaderStyle initial="initial" animate="animate" variants={fadeInUp}>
-      <Link href="/">
+    <HeaderStyle initial='initial' animate='animate' variants={fadeInUp}>
+      <Link href='/'>
         <a>
           <IconLogo />
         </a>
       </Link>
-      <ul className="navigation">
+      <ul className='navigation'>
         {/* <li>
           <a className='a2' href="https://www.buriedsignals.com/" target="_blank" rel="noreferrer">
             Buried Signals
@@ -34,13 +34,18 @@ const Header = ({ ...props }) => {
           </a>
         </li> */}
         <li>
-          <a className='a2' href="https://tomvaillant.substack.com/" target="_blank" rel="noreferrer">
+          <a
+            className='a2'
+            href='https://tomvaillant.substack.com/'
+            target='_blank'
+            rel='noreferrer'
+          >
             Newsletter
             <IconArrowRotate />
           </a>
         </li>
         <li>
-          <Link href="/about">
+          <Link href='/about'>
             <a className='a2'>
               About
               <IconQuestion />
@@ -48,11 +53,23 @@ const Header = ({ ...props }) => {
           </Link>
         </li>
         <li>
-          <a className='a2' href="https://linktr.ee/tomvaillant" target="_blank" rel="noreferrer">Connect</a>
+          <a
+            className='a2'
+            href='https://linktr.ee/tomvaillant'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Connect
+          </a>
+        </li>
+        <li>
+          <Link href='/coaching'>
+            <a className='a2'>Coaching</a>
+          </Link>
         </li>
       </ul>
     </HeaderStyle>
   )
 }
 
-export default Header;
+export default Header
