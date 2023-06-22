@@ -36,11 +36,11 @@ const Header = ({ ...props }) => {
         <li>
           <a
             className='a2'
-            href='https://tomvaillant.substack.com/'
+            href='https://studio.buriedsignals.com/'
             target='_blank'
             rel='noreferrer'
           >
-            Newsletter
+            Studio
             <IconArrowRotate />
           </a>
         </li>

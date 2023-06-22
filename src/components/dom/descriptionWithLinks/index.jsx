@@ -3,15 +3,10 @@ import React from 'react';
 const DescriptionWithLinks = () => {
   return (
     <span>
-      A creative producer building experiences, documentaries, and visual narratives for the web. Currently building{' '}
-      <a className="description-links" href="https:buriedsignals.com" target="_blank" rel="noopener noreferrer">
-        Buried Signals
-      </a>{' '}
-      and{' '}
-      <a className="description-links" href="https:nuanced.com" target="_blank" rel="noopener noreferrer">
-        Nuanced
-      </a>
-      .
+      A data storyteller and filmmaker producing visual narratives, documentaries and interactive experiences for the web. 
+      <br />
+      <br />
+      I write about the lessons learned after a decade in production.
     </span>
   );
 };
