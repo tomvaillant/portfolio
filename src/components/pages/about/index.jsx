@@ -19,7 +19,7 @@ const datas = {
           url: "https://buriedsignals.com" 
         },
         {
-          name: "Buried Signams Studio",
+          name: "Buried Signals Studio",
           url: "https://studio.buriedsignals.com" 
         },
         {
@@ -150,9 +150,9 @@ const datas = {
   awards: {
     title: "Awwwards",
     list: [
-      { number: "13", type: "Awwwards" },
-      { number: "10", type: "FWA" },
-      { number: "5", type: "CSS" }
+      { number: "15", type: "Awwwards" },
+      { number: "12", type: "FWA" },
+      { number: "7", type: "CSS" }
     ]
   },
   socials: [
