@@ -63,9 +63,14 @@ const Header = ({ ...props }) => {
           </a>
         </li>
         <li>
-          <Link href='/coaching'>
-            <a className='a2'>Coaching</a>
-          </Link>
+          <a 
+          className='a2'
+          href='https://producer-course.xyz'
+          target='_blank'
+          rel='noreferrer'
+          >
+            Course
+          </a>
         </li>
       </ul>
     </HeaderStyle>

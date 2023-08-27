@@ -5,11 +5,11 @@ const datas = {
   name: "Tom Vaillant",
   job: "Creative Producer",
   location: "Based in Zurich",
-  description: ["I've been producing content and interactive experiences for the past decade, relying on creative skills from a filmmaking background with technical know-how from programming experiments.", 
-  "After years of trying to become a specialist I've fallen in love with being a generalist, carving out time to continue learning and growing as a digital storyteller.", 
-  "More recently I've come to focus my energy on a long-standing obsession: information design and visual narratives.", 
-  "Currently building Buried Signals and Nuanced while supporting the production team at Immersive Garden, past gigs have found me delivering award-winning projects for Red Bull and North Kingdom. I also run Wallrunners: non-profit sports academies in Kenya, Kashmir and Gaza.",
-  "On days off I read or write sci-fi and fantasy or goof around in the mountains with my dog."],
+  description: ["I've been producing content and interactive experiences for the past decade, relying on creative skills from a filmmaking background along with programming experience.", 
+  "After years of trying to become a specialist I've fallen in love with being a dedicated generalist, carving out time to continue learning and growing as a visual communications specialist.", 
+  "More recently I've come to focus my energy on a long-standing obsession for information design and visual narratives, which blossomed into Buried Signals.", 
+  "Past gigs have found me delivering award-winning projects for Immersive Garden, Red Bull and North Kingdom. I also founded Wallrunners, a series of non-profit sports academies in Kenya, Kashmir and Gaza.",
+  "On days off I love Crossfit, reading and goofing around in the mountains with my dog."],
   experienciesCompanies: {
     currently: {
       title: "Currents",
@@ -19,12 +19,8 @@ const datas = {
           url: "https://buriedsignals.com" 
         },
         {
-          name: "Nuanced",
-          url: "https://nuanced.studio" 
-        },
-        {
-          name: "Immersive Garden",
-          url: "https://immersive-g.com" 
+          name: "Buried Signams Studio",
+          url: "https://studio.buriedsignals.com" 
         },
         {
           name: "Parsons School of Design",
@@ -35,6 +31,10 @@ const datas = {
     previously: {
       title: "Previous",
       companies: [
+        {
+          name: "Immersive Garden",
+          url: "https://immersive-g.com" 
+        },
         {
           name: "North Kingdom",
           url: "https://northkingdom.com" 
@@ -51,7 +51,7 @@ const datas = {
     }
   },
   experienciesProjects: {
-    title: "Highlights",
+    title: "Producer highlights",
     companies: [
       {
         title: "With Immersive Garden",
@@ -72,25 +72,6 @@ const datas = {
             {
               name: "Orano - Nuclear Education Experience",
               url: "https://www.awwwards.com/sites/orano"
-            }
-          ]
-        }
-      },
-      {
-        title: "With Nuanced",
-        years: {
-          2022: [
-            {
-              name: "Lines of Control",
-              url: "https://linesofcontrol.com"
-            },
-            {
-              name: "The Yemen Tribute",
-              url: "https://yementribute.com"
-            },
-            {
-              name: "GATHER - Initiative Film",
-              url: "https://www.youtube.com/watch?v=IPpgVmy3z-0"
             }
           ]
         }
