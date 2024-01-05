@@ -3,11 +3,11 @@ import { animate, motion } from 'framer-motion';
 
 const datas = {
   name: "Tom Vaillant",
-  job: "Creative Producer",
+  job: "Visual Journalist & Filmmaker",
   location: "Based in Zurich",
-  description: ["I've been producing content and interactive experiences for the past decade, relying on creative skills from a filmmaking background along with programming experience.", 
-  "After years of trying to become a specialist I've fallen in love with being a dedicated generalist, carving out time to continue learning and growing as a visual communications specialist.", 
-  "More recently I've come to focus my energy on a long-standing obsession for information design and visual narratives, which blossomed into Buried Signals.", 
+  description: ["I've been producing video and interactive experiences for the past decade, relying on creative skills from a filmmaking background along with programming experience.", 
+  "After years of trying to become a specialist I've fallen in love with being a dedicated generalist, carving out time to continue learning and growing as a visual journalist and documentary filmmaker.", 
+  "More recently I've come to focus my energy on a long-standing obsession for interactive and visual narratives, this passion blossomed into Buried Signals.", 
   "Past gigs have found me delivering award-winning projects for Immersive Garden, Red Bull and North Kingdom. I also founded Wallrunners, a series of non-profit sports academies in Kenya, Kashmir and Gaza.",
   "On days off I love Crossfit, reading and goofing around in the mountains with my dog."],
   experienciesCompanies: {
@@ -17,15 +17,7 @@ const datas = {
         {
           name: "Buried Signals",
           url: "https://buriedsignals.com" 
-        },
-        {
-          name: "Buried Signals Studio",
-          url: "https://studio.buriedsignals.com" 
-        },
-        {
-          name: "Parsons School of Design",
-          url: "https://www.newschool.edu/parsons/" 
-        },
+        }
       ]
     },
     previously: {
