@@ -65,7 +65,7 @@ const Header = ({ ...props }) => {
         <li>
           <a 
           className='a2'
-          href='https://producer-course.xyz'
+          href='https://producer-course.super.site'
           target='_blank'
           rel='noreferrer'
           >
