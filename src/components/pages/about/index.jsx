@@ -5,11 +5,12 @@ const datas = {
   name: "Tom Vaillant",
   job: "Visual Journalist & Filmmaker",
   location: "Based in Zurich",
-  description: ["I've been producing video and interactive experiences for the past decade, relying on creative skills from a filmmaking background along with programming experience.", 
-  "After years of trying to become a specialist I've fallen in love with being a dedicated generalist, carving out time to continue learning and growing as a visual journalist and documentary filmmaker.", 
-  "More recently I've come to focus my energy on a long-standing obsession for interactive and visual narratives, this passion blossomed into Buried Signals.", 
-  "Past gigs have found me delivering award-winning projects for Immersive Garden, Red Bull and North Kingdom. I also founded Wallrunners, a series of non-profit sports academies in Kenya, Kashmir and Gaza.",
+  description: ["I've been producing content and interactive experiences for the past decade, relying on creative skills from a documentary filmmaking background with programming expertise in Svelte and D3.", 
+  "After leading large production teams on award-winning web and video productions I created an independent communications and journalism studio, where I'm currently working on visual investigations for Le Monde, SudDeutsch Zeitung, NZZ and The Pudding.", 
+  "I received a scholarship to join this year's Lede Program at the Columbia School of Journalism, and completed information design and data visualization  studies at Parsons School of Design.",
   "On days off I love Crossfit, reading and goofing around in the mountains with my dog."],
+
+
   experienciesCompanies: {
     currently: {
       title: "Currents",
@@ -21,103 +22,53 @@ const datas = {
       ]
     },
     previously: {
-      title: "Previous",
+      title: "Education",
       companies: [
         {
-          name: "Immersive Garden",
-          url: "https://immersive-g.com" 
+          name: "Columbia School of Journalism - Lede Program",
+          url: "https://ledeprogram.com/" 
         },
         {
-          name: "North Kingdom",
-          url: "https://northkingdom.com" 
+          name: "Parsons School of Design - Information Design & Data Visualization",
+          url: "https://cpe.newschool.edu/public/category/courseCategoryCertificateProfile.do?method=load&certificateId=1012525" 
         },
         {
-          name: "Red Bull",
-          url: "https://redbull.com" 
-        },
-        {
-          name: "Seedstars",
-          url: "https://seedstars.com" 
+          name: "Bellingcat - OSINT Training Workshops",
+          url: "https://www.bellingcat.com/workshops/" 
         }
       ]
     }
   },
   experienciesProjects: {
-    title: "Producer highlights",
+    title: "Visuals",
     companies: [
       {
-        title: "With Immersive Garden",
-        years: {
-          2023: [
-            {
-              name: "Aten7",
-              url: "https://www.aten7.com/"
-            },
-            {
-              name: "Amazon Games - New World Map",
-              url: "https://www.awwwards.com/sites/new-world-map-1"
-            },
-            {
-              name: "Qatar Foundation - In Numbers",
-              url: ""
-            },
-            {
-              name: "Orano - Nuclear Education Experience",
-              url: "https://www.awwwards.com/sites/orano"
-            }
-          ]
-        }
-      },
-      {
-        title: "With North Kingdom",
+        title: "Interactives",
         years: {
           2019: [
             {
-              name: "Riot X Arcane",
-              url: "https://www.northkingdom.com/case/riotx-arcane"
+              name: "Lines of Control",
+              url: "https://linesofcontrol.com/"
             },
             {
-              name: "Riot - Waiting for Ryze",
-              url: "https://www.riotgames.com/en/work-with-us/offices/dublin/getting-creative-with-eus-publishing-team"
+              name: "Yemen Tribute",
+              url: "https://yemen.buriedsignals.com/"
             },
             {
-              name: "ON - The Roger",
-              url: "https://theroger.com/en/products"
+              name: "WHO Polio Report",
+              url: "https://nigeria.makepoliohistory.org/"
             },
             {
-              name: "IBM - Terminal",
-              url: "https://www.ibm.com/security/digital-assets/cybersecurity-ops/terminal/"
-            },
-            {
-              name: "Nespresso - XR Interactive Tables",
-              url: "https://www.northkingdom.com/case/nespresso-table"
-            }
-          ],
-        },
-      }, 
-      {
-        title: "With Red Bull",
-        years: {
-          2016: [
-            {
-              name: "Chromasound",
-              url: "https://hyphenate.tv/work/redbull-chromasound-vr/"
-            },
-            {
-              name: "Interactive Festival Lineup",
-              url: "https://www.awwwards.com/sites/festival-lineup"
-            },
-            {
-              name: "Chordsurfer",
-              url: "https://www.cssdesignawards.com/sites/chordsurfer/28873/"
+              name: "Gazan Casualties",
+              url: "https://gaza-nine.vercel.app/"
             }
           ],
         },
       },
       {
-        title: "Freelance",
+        title: "Documentaries",
         years: {
-          2014: [
+          2015: [
             {
               name: "Red Bull - Underground Beirut",
               url: "https://www.redbull.com/int-en/watch-an-exclusive-short-film-about-club-culture-in-beirut-lebanon"
@@ -150,7 +101,7 @@ const datas = {
   socials: [
     {
       title: "Twitter",
-      url: "https://twitter.com/hitomvaillant"
+      url: "https://twitter.com/_tomvaillant"
     },
     {
       title: "Linkedin",
