@@ -3,7 +3,7 @@ import React from 'react';
 const DescriptionWithLinks = () => {
   return (
     <span>
-      Independent visual journalist and filmmaker producing data-driven visual essays and documentaries.
+      I'm an independent visual journalist and documentary filmmaker.
     </span>
   );
 };

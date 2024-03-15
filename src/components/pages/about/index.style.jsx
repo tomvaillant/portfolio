@@ -46,7 +46,7 @@ export const AboutStyle = styled.div`
         ul {
           li {
             .p1 {
-              text-decoration: line-through;
+              text-decoration: underline;
             }
           }
         }

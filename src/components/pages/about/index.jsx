@@ -13,7 +13,7 @@ const datas = {
 
   experienciesCompanies: {
     currently: {
-      title: "Currents",
+      title: "Current",
       companies: [
         {
           name: "Buried Signals",
