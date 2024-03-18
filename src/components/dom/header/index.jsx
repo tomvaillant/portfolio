@@ -52,16 +52,6 @@ const Header = ({ ...props }) => {
             </a>
           </Link>
         </li>
-        <li>
-          <a
-            className='a2'
-            href='https://linktr.ee/tomvaillant'
-            target='_blank'
-            rel='noreferrer'
-          >
-            Connect
-          </a>
-        </li>
       </ul>
     </HeaderStyle>
   )
