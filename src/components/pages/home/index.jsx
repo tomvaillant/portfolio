@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const datas = {
   title: "Hey, I'm Tom.",
   description: (() => <DescriptionWithLinks />)(),
-  allCategories: ['articles', 'experiments', 'stories'],
+  allCategories: ['articles', 'investigations'],
 }
 
 const fadeInUp = {

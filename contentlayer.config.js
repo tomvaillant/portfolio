@@ -1,16 +1,20 @@
-import { defineDocumentType, defineNestedType, makeSource } from 'contentlayer/source-files';
+import {
+  defineDocumentType,
+  defineNestedType,
+  makeSource,
+} from 'contentlayer/source-files'
 
-import remarkGfm from 'remark-gfm';
-import rehypeSlug from 'rehype-slug';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import rehypePrism from 'rehype-prism-plus';
+import remarkGfm from 'remark-gfm'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypePrism from 'rehype-prism-plus'
 
 const computedFields = {
   slug: {
     type: 'string',
-    resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, '')
-  }
-};
+    resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
+  },
+}
 
 const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -21,11 +25,16 @@ const Post = defineDocumentType(() => ({
     publishedAt: { type: 'date', required: true },
     description: { type: 'string', required: true },
     image: { type: 'string', required: false },
-    category: { type: 'enum', options: ['articles', 'experiments'], default: 'articles', required: true },
+    category: {
+      type: 'enum',
+      options: ['articles', 'investigations'],
+      default: 'investigations',
+      required: true,
+    },
     externalLink: { type: 'string', default: null, required: false },
   },
-  computedFields
-}));
+  computedFields,
+}))
 
 const contentLayoutConfig = makeSource({
   contentDirPath: 'src/content',
@@ -33,16 +42,16 @@ const contentLayoutConfig = makeSource({
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
-      rehypeSlug, 
+      rehypeSlug,
       rehypePrism,
       [
         rehypeAutolinkHeadings,
-        { 
-          properties: { className: ['anchor'] }
-        }
-      ]
-    ] 
-  }
-});
+        {
+          properties: { className: ['anchor'] },
+        },
+      ],
+    ],
+  },
+})
 
-export default contentLayoutConfig;
+export default contentLayoutConfig

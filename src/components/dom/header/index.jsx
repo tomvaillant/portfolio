@@ -62,16 +62,6 @@ const Header = ({ ...props }) => {
             Connect
           </a>
         </li>
-        <li>
-          <a 
-          className='a2'
-          href='https://producer-course.super.site'
-          target='_blank'
-          rel='noreferrer'
-          >
-            Course
-          </a>
-        </li>
       </ul>
     </HeaderStyle>
   )
