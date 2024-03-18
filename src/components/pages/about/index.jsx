@@ -164,52 +164,6 @@ const About = () => {
           </div>
         </motion.div>
         <motion.hr className='separator' variants={fadeInUp} />
-        <motion.div className='projects' variants={fadeInUp}>
-          <h2 className='h2'>{datas.experienciesProjects.title}</h2>
-          <ul className='projects-companies'>
-            {datas.experienciesProjects.companies.map((company, index) => (
-              <li key={`company-${index}`} className='projects-company'>
-                <h3 className='p1'>{company.title}</h3>
-                <ul className='years-projects'>
-                  {Object.keys(company.years).map((key, index) => (
-                    <li key={`year-${key}`} className='year-projects'>
-                      <p className='p2'>{key}</p>
-                      <ul className='list-projects'>
-                        {company.years[key].map((project, index) => (
-                          <li key={`project-${index}`} className='project'>
-                            <a
-                              className='p1'
-                              href={project.url}
-                              target='_blank'
-                              rel='noreferrer'
-                            >
-                              {' '}
-                              {project.name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-        <motion.hr className='separator' variants={fadeInUp} />
-        <motion.div className='awards' variants={fadeInUp}>
-          <h2 className='h2'>{datas.awards.title}</h2>
-          <ul className='awards-types'>
-            {datas.awards.list.map((award, index) => (
-              <li key={`award-${award.type}`} className='awards-type'>
-                <p>
-                  <span className='p2'>{award.number}</span>
-                  <span className='p1'>{award.type}</span>
-                </p>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
       </motion.div>
     </AboutStyle>
   )
