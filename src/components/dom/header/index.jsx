@@ -27,12 +27,24 @@ const Header = ({ ...props }) => {
         </a>
       </Link>
       <ul className='navigation'>
-        {/* <li>
-          <a className='a2' href="https://www.buriedsignals.com/" target="_blank" rel="noreferrer">
-            Buried Signals
-            <IconArrowRotate />
+        <li>
+          <Link href='/about'>
+            <a className='a2'>
+              About
+              <IconQuestion />
+            </a>
+          </Link>
+        </li>
+        <li>
+          <a
+            className='a2'
+            href='https://buriedsignals.com'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Blog
           </a>
-        </li> */}
+        </li>
         <li>
           <a
             className='a2'
@@ -43,14 +55,6 @@ const Header = ({ ...props }) => {
             Studio
             <IconArrowRotate />
           </a>
-        </li>
-        <li>
-          <Link href='/about'>
-            <a className='a2'>
-              About
-              <IconQuestion />
-            </a>
-          </Link>
         </li>
       </ul>
     </HeaderStyle>
